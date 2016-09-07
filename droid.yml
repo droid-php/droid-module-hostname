@@ -1,0 +1,16 @@
+project:
+    name: "droid/hostname"
+    description: "Change the Host name"
+
+tasks:
+    -
+      name: "Copy the hostname script to the host."
+      command: "fs:copy"
+      arguments:
+          src: "!{{ mod_path}}/assets/hostname.sh.template"
+          dest: "/tmp/hostname.sh"
+    -
+      name: "Execute the hostname script"
+      command: "shell:exec"
+      arguments:
+          command-line: "bash /tmp/hostname.sh"
