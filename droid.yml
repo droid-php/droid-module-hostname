@@ -12,5 +12,6 @@ tasks:
     -
       name: "Execute the hostname script"
       command: "shell:exec"
+      with_sudo: true
       arguments:
           command-line: "bash /tmp/hostname.sh"
