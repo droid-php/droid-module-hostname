@@ -1,4 +1,4 @@
-# Droid Module: droid/hostname
+# Droid Module: hostname
 
 Change the host name. For more information on Droid, please see
 [droidphp.com](http://droidphp.com).
