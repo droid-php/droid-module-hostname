@@ -1,5 +1,8 @@
 description: "Change the Host name"
 
+variables:
+    use_legacy_templating: true
+
 tasks:
     -
       name: "Copy the hostname script to the host."
